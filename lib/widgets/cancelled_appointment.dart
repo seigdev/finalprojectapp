@@ -17,8 +17,9 @@ class _CancelledAppointmentState extends ConsumerState<CancelledAppointment> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        heightTwenty,
-        cancelledcomponent(context),
+        heightFifty,
+        // cancelledcomponent(context),
+        const Center(child: Text('You haven\'t cancelled any appointment yet.'))
       ],
     );
   }

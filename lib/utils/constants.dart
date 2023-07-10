@@ -82,17 +82,17 @@ Widget homeheader(
           ),
         ],
       ),
-      // Row(
-      //   children: [
-      //     const Icon(
-      //       Iconsax.notification,
-      //     ),
-      //     widthTen,
-      //     const Icon(
-      //       Iconsax.search_normal,
-      //     ),
-      //   ],
-      // ),
+      Row(
+        children: [
+          const Icon(
+            Iconsax.notification,
+          ),
+          widthTen,
+          const Icon(
+            Iconsax.search_normal,
+          ),
+        ],
+      ),
     ],
   );
 }

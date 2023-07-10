@@ -16,8 +16,9 @@ class _UpcomingAppointmentState extends ConsumerState<UpcomingAppointment> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        heightTwenty,
-        upcomingcomponent(context),
+        heightFifty,
+        // upcomingcomponent(context),
+        const Center(child: Text('You haven\'t scheduled any appointment yet.'))
       ],
     );
   }

@@ -13,6 +13,8 @@ class PatientSchedule extends ConsumerStatefulWidget {
 class _PatientScheduleState extends ConsumerState<PatientSchedule> {
   @override
   Widget build(BuildContext context) {
-    return upcomingdoctorscomponent(context);
+    return const Center(
+      child: Text('no upcoming schedule at the moment.'),
+    );
   }
 }

@@ -15,7 +15,7 @@ class DoctorHome extends ConsumerStatefulWidget {
 }
 
 class _DoctorHomeState extends ConsumerState<DoctorHome> {
-  int noOfPatient = 10;
+  int noOfPatient = 0;
   DateTime date = DateTime.now();
   @override
   Widget build(BuildContext context) {

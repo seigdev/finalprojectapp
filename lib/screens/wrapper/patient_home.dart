@@ -1,6 +1,8 @@
 import 'package:finalprojectapp/screens/patients/doctors_nearby.dart';
 import 'package:finalprojectapp/screens/patients/patients_schedules.dart';
+import 'package:finalprojectapp/utils/colors.dart';
 import 'package:finalprojectapp/utils/constants.dart';
+import 'package:finalprojectapp/utils/text_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -28,7 +30,17 @@ class _PatientHomeState extends ConsumerState<PatientHome> {
             text: data?.name,
           ),
           heightTwenty,
-          InkWell(onTap: () {}, child: Text(data?.location ?? 'location')),
+          Text(
+            data?.location ?? 'location',
+            style: semiboldtextStyle(),
+          ),
+          // InkWell(
+          //   onTap: () {},
+          //   child: Text(
+          //     'tap to change',
+          //     style: mediumtextStyle(14, colorGrey),
+          //   ),
+          // ),
           heightFifty,
           componentheader(context, maintitle: 'Doctors nearby'),
           heightTwenty,

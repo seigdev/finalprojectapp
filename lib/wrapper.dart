@@ -48,23 +48,23 @@ class _PatientWrapperState extends State<PatientWrapper> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: primaryColor,
-        onPressed: () async {
-          try {
-            dynamic conversationObject = {
-              'appId':
-                  '1c89c72f58b9e8109206e2b28d4825be5' // The [APP_ID](https://dashboard.kommunicate.io/settings/install) obtained from kommunicate dashboard.
-            };
-            dynamic result = await KommunicateFlutterPlugin.buildConversation(
-                conversationObject);
-            print("Conversation builder success : " + result.toString());
-          } on Exception catch (e) {
-            print("Conversation builder error occurred : " + e.toString());
-          }
-        },
-        child: const Icon(Iconsax.message),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: primaryColor,
+      //   onPressed: () async {
+      //     try {
+      //       dynamic conversationObject = {
+      //         'appId':
+      //             '1c89c72f58b9e8109206e2b28d4825be5' // The [APP_ID](https://dashboard.kommunicate.io/settings/install) obtained from kommunicate dashboard.
+      //       };
+      //       dynamic result = await KommunicateFlutterPlugin.buildConversation(
+      //           conversationObject);
+      //       print("Conversation builder success : " + result.toString());
+      //     } on Exception catch (e) {
+      //       print("Conversation builder error occurred : " + e.toString());
+      //     }
+      //   },
+      //   child: const Icon(Iconsax.message),
+      // ),
       body: IndexedStack(
         index: _currentIndex,
         children: _screens,

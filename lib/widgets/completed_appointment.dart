@@ -17,8 +17,9 @@ class _CompletedAppointmentState extends ConsumerState<CompletedAppointment> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        heightTwenty,
-        completedcomponent(context),
+        heightFifty,
+        // completedcomponent(context),
+        const Center(child: Text('You haven\'t completed any appointment yet.'))
       ],
     );
   }
