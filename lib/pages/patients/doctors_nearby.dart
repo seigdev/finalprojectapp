@@ -33,25 +33,25 @@ class _DoctorsNearbyState extends ConsumerState<DoctorsNearby> {
       data: (data) {
         var results = data;
         if (results.isEmpty) {
-          return isEmptyVisitors;
+          return isEmptyDoctors;
         }
 
         return SizedBox(
-          height: 150,
+          height: 115,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: results.length > 5 ? 5 : results.length,
             itemBuilder: (_, i) {
-              final visitor = results[i];
+              final doctor = results[i];
               return InkWell(
                 onTap: () {},
                 child: nearbydcotorcontainer(
                   context,
-                  name: visitor.name,
-                  date: dateFormat.format(visitor.createdAt).toString(),
-                  time: timeFormat.format(visitor.createdAt).toString(),
-                  speciality: visitor.type,
-                  rating: visitor.location,
+                  name: doctor.name,
+                  date: dateFormat.format(doctor.createdAt).toString(),
+                  time: timeFormat.format(doctor.createdAt).toString(),
+                  speciality: doctor.type,
+                  rating: results.indexOf(doctor).toString(),
                 ),
               );
             },

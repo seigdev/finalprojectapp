@@ -1,4 +1,4 @@
-import 'package:finalprojectapp/screens/doctor/doctors_schedules.dart';
+import 'package:finalprojectapp/pages/doctor/doctors_schedules.dart';
 import 'package:finalprojectapp/utils/colors.dart';
 import 'package:finalprojectapp/utils/constants.dart';
 import 'package:finalprojectapp/utils/text_style.dart';

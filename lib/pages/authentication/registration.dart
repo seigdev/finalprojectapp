@@ -1,6 +1,6 @@
 // ignore_for_file: avoid_print
 
-import 'package:finalprojectapp/screens/authentication/login.dart';
+import 'package:finalprojectapp/pages/authentication/login.dart';
 import 'package:finalprojectapp/services/preferences.dart';
 import 'package:finalprojectapp/utils/button.dart';
 import 'package:finalprojectapp/utils/colors.dart';

@@ -1,4 +1,4 @@
-import 'package:finalprojectapp/authstate.dart';
+import 'package:finalprojectapp/pages/core/authstate.dart';
 import 'package:finalprojectapp/services/preferences.dart';
 import 'package:finalprojectapp/utils/colors.dart';
 import 'package:finalprojectapp/utils/constants.dart';

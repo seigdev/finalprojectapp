@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../utils/components.dart';
-import '../utils/constants.dart';
+import '../utils/colors.dart';
+import '../utils/text_style.dart';
 
 class CompletedAppointment extends ConsumerStatefulWidget {
   const CompletedAppointment({super.key});
@@ -15,12 +15,14 @@ class CompletedAppointment extends ConsumerStatefulWidget {
 class _CompletedAppointmentState extends ConsumerState<CompletedAppointment> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        heightFifty,
-        // completedcomponent(context),
-        const Center(child: Text('You haven\'t completed any appointment yet.'))
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 200),
+      child: Center(
+        child: Text(
+          'You don\'t have completed appointments.',
+          style: mediumtextStyle(14, colorGrey),
+        ),
+      ),
     );
   }
 }

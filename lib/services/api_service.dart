@@ -3,7 +3,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:finalprojectapp/authstate.dart';
+import 'package:finalprojectapp/pages/core/authstate.dart';
 import 'package:finalprojectapp/models/nearby_doctor_model.dart';
 import 'package:finalprojectapp/services/preferences.dart';
 import 'package:flutter/material.dart';

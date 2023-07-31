@@ -1,6 +1,6 @@
 // ignore_for_file: avoid_print
 
-import 'package:finalprojectapp/screens/authentication/registration.dart';
+import 'package:finalprojectapp/pages/authentication/registration.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax/iconsax.dart';

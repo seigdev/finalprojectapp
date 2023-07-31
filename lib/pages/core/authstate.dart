@@ -1,11 +1,11 @@
 // ignore_for_file: avoid_print
 
 import 'package:finalprojectapp/services/preferences.dart';
-import 'package:finalprojectapp/wrapper.dart';
+import 'package:finalprojectapp/pages/core/wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'screens/authentication/login.dart';
+import '../authentication/login.dart';
 
 class AuthState extends ConsumerStatefulWidget {
   const AuthState({super.key});

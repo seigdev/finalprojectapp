@@ -8,7 +8,7 @@ import '../../utils/constants.dart';
 import '../../utils/input_fields.dart';
 import '../../utils/navigation.dart';
 import '../../utils/text_style.dart';
-import '../../wrapper.dart';
+import '../core/wrapper.dart';
 
 class DoctorForm extends ConsumerStatefulWidget {
   const DoctorForm({super.key});

@@ -1,4 +1,5 @@
-import 'package:finalprojectapp/utils/components.dart';
+import 'package:finalprojectapp/utils/colors.dart';
+import 'package:finalprojectapp/utils/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -13,8 +14,14 @@ class PatientSchedule extends ConsumerStatefulWidget {
 class _PatientScheduleState extends ConsumerState<PatientSchedule> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('no upcoming schedule at the moment.'),
+    return Padding(
+      padding: const EdgeInsets.only(top: 150),
+      child: Center(
+        child: Text(
+          'no upcoming schedule at the moment.',
+          style: mediumtextStyle(14, colorGrey),
+        ),
+      ),
     );
   }
 }

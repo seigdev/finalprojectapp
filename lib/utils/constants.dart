@@ -52,46 +52,61 @@ forgotPassword(
 Widget homeheader(
   BuildContext context, {
   String? text,
+  String? location,
 }) {
-  return Row(
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  return Column(
+    // crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            height: 50,
-            width: 50,
-            decoration: BoxDecoration(
-              color: primaryColor,
-              borderRadius: BorderRadius.circular(12),
-            ),
-          ),
-          widthTen,
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          Row(
             children: [
-              Text(
-                'Good Morning',
-                style: regulartextStyle(14, colorGrey),
+              Container(
+                height: 40,
+                width: 40,
+                decoration: BoxDecoration(
+                  color: primaryColor,
+                  borderRadius: BorderRadius.circular(12),
+                ),
               ),
-              Text(
-                text ?? 'Lorem Ipsum',
-                style: semiboldtextStyle(16),
+              widthTen,
+              Column(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Good Morning',
+                        style: regulartextStyle(14, colorGrey),
+                      ),
+                      Text(
+                        text ?? 'Lorem Ipsum',
+                        style: semiboldtextStyle(16),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              const Icon(
+                Iconsax.notification,
+              ),
+              widthTen,
+              const Icon(
+                Iconsax.search_normal,
               ),
             ],
           ),
         ],
       ),
-      Row(
-        children: [
-          const Icon(
-            Iconsax.notification,
-          ),
-          widthTen,
-          const Icon(
-            Iconsax.search_normal,
-          ),
-        ],
+      heightTwenty,
+      Text(
+        '📍${location ?? 'location'}',
+        style: semiboldtextStyle(16),
       ),
     ],
   );
@@ -405,15 +420,12 @@ Widget settingItems(
       ),
     );
 
-Expanded isEmptyVisitors = Expanded(
-  child: ListView(
-    children: [
-      Center(
-        child: Text(
-          "You don't have any visitor at the moment.",
-          style: regulartextStyle(14, colorGrey),
-        ),
-      ),
-    ],
+Padding isEmptyDoctors = Padding(
+  padding: const EdgeInsets.only(top: 20),
+  child: Center(
+    child: Text(
+      "no doctor nearby at the moment.",
+      style: mediumtextStyle(14, colorGrey),
+    ),
   ),
 );

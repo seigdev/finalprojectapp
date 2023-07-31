@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../utils/components.dart';
-import '../utils/constants.dart';
+import '../utils/colors.dart';
+import '../utils/text_style.dart';
 
 class CancelledAppointment extends ConsumerStatefulWidget {
   const CancelledAppointment({super.key});
@@ -15,12 +15,14 @@ class CancelledAppointment extends ConsumerStatefulWidget {
 class _CancelledAppointmentState extends ConsumerState<CancelledAppointment> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        heightFifty,
-        // cancelledcomponent(context),
-        const Center(child: Text('You haven\'t cancelled any appointment yet.'))
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 200),
+      child: Center(
+        child: Text(
+          'You don\'t have cancelled appointments.',
+          style: mediumtextStyle(14, colorGrey),
+        ),
+      ),
     );
   }
 }

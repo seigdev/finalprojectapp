@@ -1,5 +1,5 @@
-import 'package:finalprojectapp/onboarding.dart';
-import 'package:finalprojectapp/screens/authentication/login.dart';
+import 'package:finalprojectapp/pages/core/onboarding.dart';
+import 'package:finalprojectapp/pages/authentication/login.dart';
 import 'package:finalprojectapp/services/preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

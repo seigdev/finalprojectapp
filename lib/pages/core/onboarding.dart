@@ -1,4 +1,4 @@
-import 'package:finalprojectapp/screens/authentication/registration.dart';
+import 'package:finalprojectapp/pages/authentication/registration.dart';
 import 'package:finalprojectapp/utils/constants.dart';
 import 'package:finalprojectapp/utils/navigation.dart';
 import 'package:finalprojectapp/utils/text_style.dart';

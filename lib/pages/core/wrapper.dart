@@ -1,14 +1,13 @@
 // ignore_for_file: prefer_interpolation_to_compose_strings, avoid_print
 
-import 'package:finalprojectapp/screens/wrapper/doctor_home.dart';
-import 'package:finalprojectapp/screens/wrapper/messages.dart';
-import 'package:finalprojectapp/screens/wrapper/patient_home.dart';
-import 'package:finalprojectapp/screens/wrapper/settings.dart';
+import 'package:finalprojectapp/pages/wrapper/doctor_home.dart';
+import 'package:finalprojectapp/pages/wrapper/messages.dart';
+import 'package:finalprojectapp/pages/wrapper/patient_home.dart';
+import 'package:finalprojectapp/pages/wrapper/settings.dart';
 import 'package:finalprojectapp/utils/colors.dart';
 import 'package:finalprojectapp/utils/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:kommunicate_flutter/kommunicate_flutter.dart';
 
 class PatientWrapper extends StatefulWidget {
   const PatientWrapper({super.key});
@@ -48,23 +47,6 @@ class _PatientWrapperState extends State<PatientWrapper> {
           ),
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   backgroundColor: primaryColor,
-      //   onPressed: () async {
-      //     try {
-      //       dynamic conversationObject = {
-      //         'appId':
-      //             '1c89c72f58b9e8109206e2b28d4825be5' // The [APP_ID](https://dashboard.kommunicate.io/settings/install) obtained from kommunicate dashboard.
-      //       };
-      //       dynamic result = await KommunicateFlutterPlugin.buildConversation(
-      //           conversationObject);
-      //       print("Conversation builder success : " + result.toString());
-      //     } on Exception catch (e) {
-      //       print("Conversation builder error occurred : " + e.toString());
-      //     }
-      //   },
-      //   child: const Icon(Iconsax.message),
-      // ),
       body: IndexedStack(
         index: _currentIndex,
         children: _screens,

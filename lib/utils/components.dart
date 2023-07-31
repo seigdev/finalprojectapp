@@ -14,14 +14,14 @@ Widget nearbydcotorcontainer(BuildContext context,
         String? date,
         String? time}) =>
     Container(
-      width: 300,
       decoration: BoxDecoration(
         color: colorWhite,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(15),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(10),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -29,8 +29,8 @@ Widget nearbydcotorcontainer(BuildContext context,
                 Row(
                   children: [
                     Container(
-                      height: 50,
-                      width: 50,
+                      height: 35,
+                      width: 35,
                       decoration: BoxDecoration(
                         color: primaryColor,
                         borderRadius: BorderRadius.circular(12),
@@ -52,15 +52,10 @@ Widget nearbydcotorcontainer(BuildContext context,
                     ),
                   ],
                 ),
-                Row(
-                  children: [
-                    Text(
-                      rating ?? '0.0',
-                      style: mediumtextStyle(12, const Color(0xFFFFB84F)),
-                    ),
-                    const Icon(Iconsax.star,
-                        color: Color(0xFFFFB84F), size: 14),
-                  ],
+                const SizedBox(width: 100),
+                Text(
+                  "${rating ?? '0.0'}★",
+                  style: mediumtextStyle(12, const Color(0xFFFFB84F)),
                 )
               ],
             ),
@@ -77,8 +72,12 @@ Widget nearbydcotorcontainer(BuildContext context,
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        const Icon(Iconsax.calendar, size: 16),
-                        Text(date ?? '16 Feb 2023'),
+                        const Icon(Iconsax.calendar, size: 14),
+                        widthFive,
+                        Text(
+                          date ?? '16 Feb 2023',
+                          style: mediumtextStyle(12),
+                        ),
                       ],
                     ),
                   ),
@@ -93,8 +92,12 @@ Widget nearbydcotorcontainer(BuildContext context,
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        const Icon(Iconsax.clock, size: 16),
-                        Text(time ?? '12pm-3pm'),
+                        const Icon(Iconsax.clock, size: 14),
+                        widthFive,
+                        Text(
+                          time ?? '12pm-3pm',
+                          style: mediumtextStyle(12),
+                        ),
                       ],
                     ),
                   ),

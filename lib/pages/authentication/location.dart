@@ -1,4 +1,4 @@
-import 'package:finalprojectapp/authstate.dart';
+import 'package:finalprojectapp/pages/core/authstate.dart';
 import 'package:finalprojectapp/utils/button.dart';
 import 'package:finalprojectapp/utils/constants.dart';
 import 'package:finalprojectapp/utils/navigation.dart';

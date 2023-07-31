@@ -62,10 +62,14 @@ class _DoctorScheduleState extends ConsumerState<DoctorSchedule>
     List<Widget> tabContentWidgets = dates.map((date) {
       return Column(
         children: [
+          heightTen,
           Center(
-            child: Text("Content for ${DateFormat('MMM dd').format(date)}"),
+            child: Text(
+              "Content for ${DateFormat('MMM dd').format(date)}",
+              style: mediumtextStyle(14, colorGrey),
+            ),
           ),
-          heightTwenty,
+          heightThirty,
           doctorupcomingSchedule(context,
               patient: 'Moyo', time: '08:00', age: '20', complaint: 'Headache')
         ],
